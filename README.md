@@ -4,6 +4,7 @@ ReadAi 📚🤖
 📌 Descrição
 
 O ReadAi é uma plataforma inteligente de estudos para vestibulandos, oferecendo um ambiente personalizado e dinâmico para aprendizado. Com tecnologia baseada em IA, permite correção automática de redações, recomendações de estudo e um tutor virtual para suporte contínuo.
+
 ✨ Funcionalidades
 
 ✔ Conta e Perfil do Usuário: Cadastro, login e personalização com vestibulares de interesse e matérias favoritas.
@@ -21,13 +22,13 @@ O ReadAi é uma plataforma inteligente de estudos para vestibulandos, oferecendo
 🔹 Banco de Dados: MySQL
 🔹 Servidor: GlassFish
 🔹 IDE: NetBeans
+
+
 🚀 Instalação e Uso
-Pré-requisitos
 
-    Java JDK 8 ou superior
+Pré-requisitos:
+     Java JDK 8
+     NetBeans IDE 24
+     GlassFish Server
 
-    NetBeans IDE 24+
-
-    MySQL Server 8+
-
-    GlassFish Server
+  
