@@ -31,13 +31,17 @@ O ReadAi é um aplicativo inovador de estudo para vestibulares, combinando intel
 Backend:
 
 - Java EE (Jakarta EE)
-- GlassFish
 
 Frontend:
 
 - HTML
 - CSS
 - JavaScript
+
+Infraestrutura: 
+
+- Servidor: GlassFish
+- IDE: NetBeans
 
    
   
