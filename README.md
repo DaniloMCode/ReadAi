@@ -27,7 +27,17 @@ O ReadAi é um aplicativo inovador de estudo para vestibulares, combinando intel
 ✅ Administração e Validação de Conteúdo: Gestão e revisão de materiais acadêmicos, incluindo relatórios detalhados sobre o desempenho dos usuários.
 
 🛠 Tecnologias Utilizadas
-Backend
 
-    Java EE (Jakarta EE)
+Backend:
+
+- Java EE (Jakarta EE)
+- GlassFish
+
+Frontend:
+
+- HTML
+- CSS
+- JavaScript
+
+   
   
