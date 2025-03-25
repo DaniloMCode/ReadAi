@@ -11,6 +11,7 @@ O ReadAi é um aplicativo inovador de estudo para vestibulares, combinando intel
 ✨ Funcionalidades Principais
 
 ✅ Perfil do Usuário: Cadastro, login seguro e personalização com vestibulares de interesse e matérias favoritas.
+
 ✅ Plano de Estudo Personalizado: Criação de cronogramas inteligentes baseados no perfil do usuário e sugestão de materiais de estudo (vídeos, textos, podcasts).
 ✅ Banco de Questões e Exercícios: Testes personalizados, correção automática e feedback imediato.
 ✅ Correção de Redação com IA: Análise automática de gramática, coesão, coerência e estrutura textual, com sugestões de melhoria.
