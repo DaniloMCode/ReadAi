@@ -1,0 +1,196 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 de mar. de 2025, 10:27:57
+    Author     : morat
+*/
+
+/* Reset básico para garantir um visual consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Cabeçalho e barra de navegação */
+header {
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "Caveat", cursive;
+    font-style: normal;
+}
+
+a.logo img {
+    width: 40px; /* Ajuste conforme o tamanho do logo */
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar o dropdown quando o botão for clicado */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo da seção de boas-vindas */
+/* Estilo para a seção de boas-vindas */
+.boas-vindas {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: center; /* Centraliza a seção na tela */
+    padding: 50px;
+    background: #ffffff;
+
+}
+
+/* Container para imagem e texto */
+.conteudo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto ao centro */
+    justify-content: space-between; /* Coloca a imagem à esquerda e o texto à direita */
+    width: 100%;
+    max-width: 1200px; /* Limita o tamanho da largura */
+}
+
+/* Estilo da imagem */
+.imagem {
+    /*width: 40%; /* A imagem ocupa 40% da largura */
+   /* max-width: 500px; /* Limita a largura da imagem */
+    /*height: auto; /* Mantém a proporção da imagem */
+    /*margin-right: 20px; /* Espaço entre a imagem e o texto */
+    
+     width: 40%; /* A imagem ocupa 40% da largura */
+    max-width: 500px; /* Limita a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    border-radius: 20px; /* Aplica o arredondamento nas bordas */
+    object-fit: cover; 
+}
+
+/* Estilo do texto */
+.texto {
+    text-align: right; /* Alinha o texto à direita */
+    max-width: 60%; /* Limita a largura máxima do texto */
+}
+
+.texto h1 {
+    font-size: 36px;
+    font-weight: 700; /* Peso mais forte para o título */
+    color: #333;
+}
+
+.texto p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
+.botao_entra{
+    display: flex;
+    flex-direction: column; /* Para colocar os botões um embaixo do outro */
+    gap: 15px; /* Espaçamento maior entre os botões */
+    margin-top: 30px; 
+    padding: 15px 30px; /* Padding maior para espaço interno */
+    border: 2px solid; /* Borda padrão */
+    border-radius: 8px; /* Borda mais arredondada */
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 200px; /* Largura fixa dos botões */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    background-color: white;
+    color: blue;
+    border-color: blue; /* Borda azul */
+}
+
+.botao_cadastro{
+    display: flex;
+    flex-direction: column; /* Para colocar os botões um embaixo do outro */
+    gap: 15px; /* Espaçamento maior entre os botões */
+    margin-top: 30px; 
+    padding: 15px 30px; /* Padding maior para espaço interno */
+    border: 2px solid; /* Borda padrão */
+    border-radius: 8px; /* Borda mais arredondada */
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 200px; /* Largura fixa dos botões */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    background-color: blue;
+    color: white;
+    border-color: blue; /* Borda azul */
+    
+}
