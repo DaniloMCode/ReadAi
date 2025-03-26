@@ -1,6 +1,6 @@
-# ReadAi
+# ReadAI
 
-ReadAi 📚🤖
+ReadAI 📚🤖
 
 Plataforma Inteligente de Estudos para Vestibulandos
 📌 Descrição
