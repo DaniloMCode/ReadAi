@@ -1,0 +1,24 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<header>
+        <div class="header-container">
+            <!-- Logo e Nome ReadAi -->
+            <a href="#" class="logo">
+                <h1>ReadAI</h1>
+            </a>
+
+            <!-- Barra de Navegação -->
+            <nav>
+                <!-- Dropdown de Vestibulares -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Vestibulares</button>
+                    <div class="dropdown-content">
+                        <a href="#">Enem</a>
+                        <a href="#">FUVEST</a>
+                        <a href="#">UNICAMP</a>
+                        <a href="#">UNESP</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
