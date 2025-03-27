@@ -78,10 +78,11 @@ body {
             cursor: pointer;
             width: 100%;
             box-sizing: border-box;
+         
         }
 
         .options button:hover {
-            background-color: #b2ebf2;
+         background-color: #b2ebf2;
         }
 
         .continue-button {
@@ -96,8 +97,10 @@ body {
             padding: 15px 30px;
             border-radius: 5px;
             cursor: pointer;
+            transition: transform 0.3s ease;
         }
 
         .continue-button button:hover {
-            background-color: #43a047;
+              background-color: #007bff;
+            transform: translateY(-5px);
         }
