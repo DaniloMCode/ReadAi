@@ -1,0 +1,51 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ page import="java.util.*"%>
+<%
+    
+    /*
+        Este arquivo serve para criar um objeto conta
+        Que irá armazenar o email e a senha do usuário.
+        
+        O construtor padrão para zerar os valores caso necessário.
+        O construtor para fornecer os valores as variáveis do objeto.
+        Os dois métodos Get que, caso necessário, podem ser acessados em outros arquivos para
+        acessar as variáveis email e senha.
+        
+    */
+    
+    
+    class contas {
+    
+        private String _email; // Variável Email privado
+        private String _senha; // Variável Senha privada
+        
+        public void contas() { // Construtor padrão
+        
+            this._email=""; // Variável email recebe valor zeroado
+            this._senha=""; // Variável senha recebe valor zerado
+            
+        }
+        
+        public void contas(String email, String senha) { // Construtor 
+        
+            this._email = email; // Variável recebe o email do usuário e é armazenada no objeto conta
+            this._senha = senha; // Variável recebe a senha do usuário e é armazenada no objeto conta
+        
+        }
+        
+        public String get_Email() { // Método Get que pode acessar os valores das variáveis privadas
+            return _email;
+        }
+        public String get_senha() { // Método Get que pode acessar os valores das variáveis privadas
+            return _senha;
+        }
+        
+        // Método para validar se a senha digitada e o email digitado são válidos.
+        public boolean validar(String emailDigitado, String senhaDigitada) {
+            return this._email.equals(emailDigitado) && this._senha.equals(senhaDigitada);
+        }
+        
+    }
+
+    
+%>
