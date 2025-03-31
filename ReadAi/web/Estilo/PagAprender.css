@@ -1,0 +1,96 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 de mar. de 2025, 15:05:42
+    Author     : morat
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 80px;
+    background-color: #fff;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+/* Caixa no topo central */
+.top-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão COMEÇAR */
+.start-box {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+/* Bolinhas das perguntas (inicialmente escondidas) */
+.questions {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+}
