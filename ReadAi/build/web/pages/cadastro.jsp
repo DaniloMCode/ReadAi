@@ -26,14 +26,21 @@
     <div class="conteudo">
         <img src="../imagem/img_cadastro.png" alt="Imagem de boas-vindas" class="imagem">
         <div class="texto">
-            <form class="formulario">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Seu email..." required>
+            <form class="formulario" action="cadastroServlet" method="post">
+                <label for="Nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome..." required><!-- comment -->
+                
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email..." required>               
+                
+                
+                <label for="Senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Senha..." required>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Sua senha..." required>
+                <label for="Date">Data de Nascimento:</label>
+                <input type="date" id="date" name="date" placeholder="Sua data de aniversário..." required>
 
-               <button type="submit">Cadastrar</button>
+               <button type="submit" value="Cadastrar">Cadastrar</button>
             </form>
         </div>
     </div>
