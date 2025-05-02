@@ -26,7 +26,7 @@
     <div class="conteudo">
         <img src="../imagem/img_cadastro.png" alt="Imagem de boas-vindas" class="imagem">
         <div class="texto">
-            <form class="formulario" action="cadastroServlet" method="post">
+            <form class="formulario" action="/cadastroServlet" method="post">
                 <label for="Nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu nome..." required><!-- comment -->
                 
