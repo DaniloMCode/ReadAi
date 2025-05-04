@@ -54,67 +54,6 @@ nav {
     align-items: center;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.dropdown-button:hover {
-    background-color: #0056b3;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 4px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Mostrar o dropdown quando o botão for clicado */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Conteúdo principal */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Estilo da seção de boas-vindas */
-/* Estilo para a seção de boas-vindas */
-.boas-vindas {
-    display: flex;
-    align-items: center; /* Alinha verticalmente os itens ao centro */
-    justify-content: center; /* Centraliza a seção na tela */
-    padding: 50px;
-    background: #ffffff;
-
-}
-
 /* Container para imagem e texto */
 .conteudo {
     display: flex;
@@ -194,3 +133,70 @@ main {
     border-color: blue; /* Borda azul */
     
 }
+
+
+.btn-lilas {
+    background-color: #c8a2c8; /* Cor lilás (lavanda) - ajuste conforme necessário */
+    border-color: #c8a2c8;
+    color: white; /* Cor do texto do botão */
+}
+
+.btn-lilas:hover {
+    background-color: #c8a2c8 !important; /* Mantém a mesma cor de fundo */
+    border-color: #c8a2c8 !important; /* Mantém a mesma cor da borda */
+    color: white !important; /* Mantém a mesma cor do texto */
+}
+
+.btn-lilas:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200, 162, 200, 0.5); /* Mantém ou ajuste o efeito de foco */
+}
+
+.btn-lilas:active, .btn-lilas.active {
+    background-color: #c8a2c8 !important; /* Mantém a mesma cor no estado ativo */
+    border-color: #c8a2c8 !important;
+    color: white !important;
+}
+
+.btn-lilas:disabled, .btn-lilas.disabled {
+    background-color: #c8a2c8 !important;
+    border-color: #c8a2c8 !important;
+    color: white !important;
+}
+
+.boas-vindas {
+        padding: 40px 0;
+    }
+
+    .texto h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+        color: #6c757d;
+    }
+
+    .botao_entra, .botao_cadastro {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    .botao_entra {
+        background-color: #007bff; /* Cor primária do Bootstrap */
+        color: white;
+    }
+
+    .botao_cadastro {
+        border: 2px solid #007bff; /* Cor primária do Bootstrap */
+        color: #007bff;
+    }
+
+.bg-primary {
+        background-color: #6f42c1 !important; /* Cor roxa/lilás predominante na imagem */
+    }
