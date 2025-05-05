@@ -1,6 +1,12 @@
 package ConexaoBD;
 
-import java.sql.*;// Corrigir a importação para usar o pacote correto
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+
 
 public class UsuarioDB {
     private Connection conexao;
@@ -13,7 +19,10 @@ public class UsuarioDB {
             // Conexão com o banco
             String url = "jdbc:sqlite:C:/Users/morat/Documents/Github/ReadAI/ReadAI/web/db_usuario/db_usuario.db";
             conexao = DriverManager.getConnection(url);
-        } catch (Exception e) {
+            if (conexao != null) {
+                System.out.println("Conexão estabelecida com sucesso!");
+                
+        } }catch (Exception e) {
         }
     }
 

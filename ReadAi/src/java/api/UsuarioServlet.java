@@ -5,7 +5,6 @@
 package api;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -44,6 +43,7 @@ public class UsuarioServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=UTF-8");
+        
         JSONObject file = new JSONObject();
 
         try {
@@ -51,6 +51,7 @@ public class UsuarioServlet extends HttpServlet {
             file.put("exception", Usuario.exception);
             ArrayList<Usuario> list = Usuario.getList();
             JSONArray arr = new JSONArray();
+            
             for (Usuario user : list) {
                 JSONObject o = new JSONObject();
                 o.put("nome", user.getNome());
