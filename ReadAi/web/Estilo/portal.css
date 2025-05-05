@@ -1,0 +1,44 @@
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .sidebar {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #a700ff;
+        }
+
+        .brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #a700ff;
+            margin-bottom: 1rem;
+        }
+
+        .aviso {
+            background-color: #f2eaff;
+            padding: 10px;
+            border-radius: 5px;
+            color: #5c2d91;
+        }
+
+        .card-custom {
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .card-custom:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+   
+
