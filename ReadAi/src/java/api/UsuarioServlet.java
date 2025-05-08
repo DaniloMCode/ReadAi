@@ -42,7 +42,7 @@ public class UsuarioServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("application/json;charset=UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
         
         JSONObject file = new JSONObject();
 
@@ -128,7 +128,7 @@ public class UsuarioServlet extends HttpServlet {
             }
             file.put("list", arr);
 
-            JSONArray jsonUsuarios = new JSONArray();
+           JSONArray jsonUsuarios = new JSONArray();
             for (Usuario usuario : Usuario.list) {
                 JSONObject jsonUsuario = new JSONObject();
                 jsonUsuario.put("nome", usuario.getNome());
@@ -146,6 +146,7 @@ public class UsuarioServlet extends HttpServlet {
             file.put("error", ex.getLocalizedMessage());
             response.getWriter().print(file.toString());
         }
+           
     }
 
     /**
@@ -161,6 +162,8 @@ public class UsuarioServlet extends HttpServlet {
         JSONObject file = new JSONObject();
 
         try {
+             JSONObject body = getJSONBody(request.getReader());
+
             String nome = request.getParameter("nome");
             String sobrenome = request.getParameter("sobrenome");
             String telefone = request.getParameter("telefone");

@@ -1,0 +1,10 @@
+.sidebar .nav-item.active > .nav-link {
+    color: #a700ff !important; /* Cor roxa */
+    font-weight: bold; /* Opcional: para dar mais destaque */
+    /* Outros estilos que você quiser aplicar para indicar que está ativo */
+}
+
+.sidebar .nav-item.active > .nav-link:hover {
+    cursor: pointer; /* Opcional: cursor de "clicável" mesmo quando ativo */
+}
+

@@ -1,0 +1,36 @@
+
+.advanced-search-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1050; /* Garante que fique acima do overlay e outros elementos */
+  display: none; /* Inicialmente oculto */
+  min-width: 400px; /* Ajuste a largura conforme necessário */
+}
+
+.advanced-search-card.active {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  z-index: 1040; /* Abaixo do card, mas acima do conteúdo principal */
+  display: none; /* Inicialmente oculto */
+}
+
+.overlay.active {
+  display: block;
+}
+
+.advanced-search-card .btn-close {
+  margin: -0.5rem -0.5rem auto auto; /* Posiciona o botão de fechar no canto */
+}

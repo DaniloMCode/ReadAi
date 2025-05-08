@@ -6,23 +6,23 @@ import java.sql.*;
 public class Usuario {
 
     public static final String CLASS_NAME = "org.sqlite.JDBC";
-    public static final String URL = "jdbc:sqlite:db_usuario.db";
+    public static final String URL = "jdbc:sqlite:C:/user/morat/Documents/GitHub/ReadAi/ReadAi/web/WEB-INF/db_usuario/db_usuario.db";
 
     public static Exception exception = null;
 
-    public static void createTble() {
+    public static void createTable() {
         try (
-                Connection con = getConnection(); Statement stmt = con.createStatement()) {
-            String sql = "create table if not exists (\n"
-                    + " id INTEGER PRIMARY KEY AUTOINCREMENT, \n"
-                    + " nome TEXT NOT NULL, \n"
-                    + " sobrenome TEXT NOT NULL, \n"
-                    + " telefone TEXT, \n"
-                    + " cpf TEXT UNIQUE NOT NULL, \n"
-                    + " email TEXT UNIQUE NOT NULL, \n"
-                    + " senha TEXT NOT NULL, \n"
-                    + ");";
-
+               Connection con = getConnection();
+Statement stmt = con.createStatement()) {
+    String sql = "CREATE TABLE IF NOT EXISTS db_usuario(\n" +
+                    " id INTEGER PRIMARY KEY AUTOINCREMENT, \n" +
+                    " nome TEXT NOT NULL, \n" +
+                    " sobrenome TEXT NOT NULL, \n" +
+                    " telefone TEXT, \n" +
+                    " cpf TEXT UNIQUE NOT NULL, \n" +
+                    " email TEXT UNIQUE NOT NULL, \n" +
+                    " senha TEXT NOT NULL, \n" +
+                    ");";
             stmt.execute(sql);
 
             stmt.close();

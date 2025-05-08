@@ -88,8 +88,8 @@
         <div class="row">
             <div class="col-md-6 text-center text-md-left">
                 <div class="d-flex flex-column align-items-center align-items-md-start">
-                    <img src="imagem/logo_pazzei_branco.png" alt="Logo Pazzei" height="30" class="mb-2">
-                    <p class="mb-0">&copy; Pazzei 2025. Todos os direitos reservados.</p>
+                    
+                    <p class="mb-0">&copy; ReadIA 2025. Todos os direitos reservados.</p>
                     <p class="mb-0">
                         <a href="#" class="text-white">Política de privacidade</a> |
                         <a href="#" class="text-white">Termos de uso</a>
